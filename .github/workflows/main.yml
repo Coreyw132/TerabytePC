@@ -1,0 +1,28 @@
+name: My First Workflow
+
+on:
+  push:
+    branches:
+      - main  # Trigger the workflow on push to the main branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # Set the operating system for the job
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4  # Checkout the repository’s code
+      
+      - name: Set up Node.js
+        uses: actions/setup-node@v3  # Set up Node.js for any related tasks (optional)
+        with:
+          node-version: '14'  # Specify the version of Node.js to use (if needed)
+
+      - name: Install dependencies
+        run: npm install  # Install dependencies if you're using Node.js (can be modified for other setups)
+
+      - name: Run tests
+        run: npm test  # Run tests (adjust for your project needs)
+
+      - name: Deploy (Optional)
+        run: echo "Deploying to production..."  # You can replace this with your deploy script
