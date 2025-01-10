@@ -1,4 +1,3 @@
-# Sample workflow for building and deploying a Jekyll site to GitHub Pages
 name: Deploy Jekyll with GitHub Pages dependencies preinstalled
 
 on:
@@ -33,10 +32,12 @@ jobs:
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
-          source: ./
-          destination: ./_site
+          source: ./  # Jekyll source directory (the root of the repository)
+          destination: ./_site  # Where the built site will go
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./_site  # Path to the built site directory
 
   # Deployment job
   deploy:
