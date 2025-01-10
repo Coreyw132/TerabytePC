@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4  # Checkout the repository’s code
-      
+      # You can add your additional steps here (e.g., Node.js setup, testing, etc.)
       - name: Set up Node.js
         uses: actions/setup-node@v3  # Set up Node.js for any related tasks (optional)
         with:
@@ -25,4 +25,4 @@ jobs:
         run: npm test  # Run tests (adjust for your project needs)
 
       - name: Deploy (Optional)
-        run: echo "Deploying to production..."  # You can replace this with your deploy script
+        run: echo "Deploying to production..."  # Optional step for deploying
