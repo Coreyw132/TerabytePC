@@ -3,230 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Terabyte PC and Parts LLC - Custom PCs, Repairs, and Rentals">
+    <meta name="description" content="Terabyte PC and Parts LLC - Custom PCs, Parts, and Rentals">
+    <meta name="keywords" content="Custom PCs, Gaming PCs, PC Parts, Rentals, Repairs">
+    <meta name="author" content="Terabyte PC and Parts LLC">
     <title>Terabyte PC and Parts LLC</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Roboto', sans-serif;
-            background-color: #1a1a1a;
-            color: #ffffff;
-        }
-
-        header {
-            background-color: #000;
-            padding: 20px;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 2px solid #39ff14;
-        }
-
-        .logo h1 {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 1.8rem;
-            margin: 0;
-            color: #39ff14;
-        }
-
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            gap: 20px;
-        }
-
-        nav ul li a {
-            color: #ffffff;
-            text-decoration: none;
-            font-weight: 700;
-            transition: color 0.3s;
-        }
-
-        nav ul li a:hover {
-            color: #39ff14;
-        }
-
-        section {
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        #about, #products, #services, #rentals, #contact {
-            margin: 0 auto;
-            max-width: 1200px;
-        }
-
-        #about p, #products p, #rentals p {
-            line-height: 1.6;
-        }
-
-        .product {
-            background: #2a2a2a;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 20px 0;
-        }
-
-        .product h3 {
-            color: #39ff14;
-        }
-
-        footer {
-            background-color: #000;
-            text-align: center;
-            padding: 20px 0;
-            border-top: 2px solid #39ff14;
-        }
-
-        footer p {
-            margin: 0;
-        }
-
-        #hero {
-            background: url('hero-bg.jpg') no-repeat center center/cover;
-            color: #ffffff;
-            text-align: center;
-            padding: 100px 20px;
-        }
-
-        #hero h1 {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 3rem;
-            margin-bottom: 20px;
-        }
-
-        #hero p {
-            font-size: 1.2rem;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        button {
-            background-color: #39ff14;
-            color: #000;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-weight: 700;
-            transition: background-color 0.3s ease-in-out;
-        }
-
-        button:hover {
-            background-color: #00bfff;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your styles -->
+    <script defer src="script.js"></script> <!-- Link to your JavaScript -->
 </head>
 <body>
     <header>
         <div class="logo">
-            <h1>Terabyte PC and Parts LLC</h1>
+            <img src="logo.png" alt="Terabyte PC and Parts LLC Logo">
         </div>
         <nav>
             <ul>
                 <li><a href="#about">About Us</a></li>
-                <li><a href="#products">PCs</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#rentals">Rentals</a></li>
+                <li><a href="#shop">Shop</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="hero">
-    <h1>Powering Your Digital World</h1>
-    <p>Custom PCs, Repairs, and Rentals tailored to your needs. Let us help you build your dream setup today!</p>
-    <button onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">Explore More</button>
-</section>
-
+        <div class="hero-content">
+            <h1>Welcome to Terabyte PC and Parts LLC</h1>
+            <p>Your source for high-performance custom PCs, gaming PC rentals, and parts!</p>
+            <a href="#shop" class="cta-button">Shop Now</a>
+        </div>
+    </section>
 
     <section id="about">
         <h2>About Us</h2>
-        <p>Welcome to Terabyte PC and Parts LLC. We specialize in custom PC builds, repairs, and rentals. Our mission is to provide high-quality and performance-driven computers for gamers and tech enthusiasts alike.</p>
-    </section>
-
-    <section id="products">
-        <h2>Our PCs</h2>
-        <div class="product">
-            <h3>Custom PCs</h3>
-            <p>We offer a range of custom-built PCs designed for gaming, content creation, and professional use. Prices range from $1,000 to $5,000 depending on specifications.</p>
-        </div>
-        <div class="product">
-            <h3>Parts Sales</h3>
-            <p>Looking for individual parts? We also offer high-performance PC parts, including motherboards, GPUs, SSDs, and more.</p>
-        </div>
+        <p>At Terabyte PC and Parts LLC, we specialize in custom-built PCs, repairs, parts, and gaming PC rentals. Founded by Corey Williams, a veteran with a passion for technology and quality service, we aim to provide the best products and personalized customer experience.</p>
     </section>
 
     <section id="services">
         <h2>Our Services</h2>
-        <ul>
-            <li>Custom PC Builds</li>
-            <li>PC Repairs</li>
-            <li>Tech Support</li>
-        </ul>
+        <div class="service">
+            <h3>Custom Builds</h3>
+            <p>We create powerful and tailored PCs to meet your gaming, work, and entertainment needs.</p>
+        </div>
+        <div class="service">
+            <h3>Repairs</h3>
+            <p>Need a repair? We offer fast and reliable repairs for your PC and gaming systems.</p>
+        </div>
+        <div class="service">
+            <h3>Rentals</h3>
+            <p>Rent a high-performance gaming PC for your events or gaming sessions.</p>
+        </div>
     </section>
 
-    <section id="rentals">
-    <h2>Gaming PC Rentals</h2>
-    <p>We offer gaming PC rentals for short-term and long-term use. Perfect for events, tournaments, or gaming on the go!</p>
-    <button onclick="alert('Rental services coming soon! Contact us for more details.')">View Rentals</button>
-</section>
+    <section id="shop">
+        <h2>Shop Custom PCs & Parts</h2>
+        <p>Browse our collection of top-tier PCs, parts, and accessories. Choose from our custom builds or select individual components to upgrade your current setup.</p>
+        <a href="/shop" class="cta-button">Visit Our Store</a>
+    </section>
 
-    
-Here’s how and where the updates should go within the current HTML structure:
-
-Updated Sections Placement:
-Hero Section (<section id="hero">): Replace the existing hero section with the updated one. This ensures the "Explore More" button has a functional link to the "About Us" section.
-
-Rentals Section (<section id="rentals">): Replace the existing rentals section with the updated code. This adds a button that either displays an alert or redirects users to a more detailed rentals page.
-
-Contact Section (<section id="contact">): Replace the existing contact section with the updated code. This adds a functional contact form allowing users to send inquiries.
-
-Final Integrated Code:
-Replace the existing code for the following sections in your HTML file:
-
-Hero Section (Updated):
-html
-Copy code
-<section id="hero">
-    <h1>Powering Your Digital World</h1>
-    <p>Custom PCs, Repairs, and Rentals tailored to your needs. Let us help you build your dream setup today!</p>
-    <button onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">Explore More</button>
-</section>
-Rentals Section (Updated):
-html
-Copy code
-<section id="rentals">
-    <h2>Gaming PC Rentals</h2>
-    <p>We offer gaming PC rentals for short-term and long-term use. Perfect for events, tournaments, or gaming on the go!</p>
-    <button onclick="alert('Rental services coming soon! Contact us for more details.')">View Rentals</button>
-</section>
-Contact Section (Updated):
-html
-Copy code
-<section id="contact">
-    <h2>Contact Us</h2>
-    <p>Have questions or want to get in touch? Reach us at:</p>
-    <form action="mailto:contact@terabytepc.com" method="post" enctype="text/plain">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" required><br><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="5" required></textarea><br><br>
-        <button type="submit">Send Message</button>
-    </form>
-</section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need assistance, reach out to us via email or our social media channels.</p>
+        <a href="mailto:info@terabyte.com">Email Us</a>
+    </section>
 
     <footer>
-        <p>&copy; 2025 Terabyte PC and Parts LLC</p>
+        <p>&copy; 2025 Terabyte PC and Parts LLC. All rights reserved.</p>
+        <p>Follow us on social media:</p>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
     </footer>
 </body>
 </html>
