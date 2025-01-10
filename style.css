@@ -50,3 +50,8 @@ footer {
     background: #333;
     color: #fff;
 }
+
+button:hover {
+    background-color: #0f3460;
+    transform: scale(1.05); /* Slight zoom effect */
+}
