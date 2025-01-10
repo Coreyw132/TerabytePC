@@ -141,10 +141,11 @@
     </header>
 
     <section id="hero">
-        <h1>Powering Your Digital World</h1>
-        <p>Custom PCs, Repairs, and Rentals tailored to your needs. Let us help you build your dream setup today!</p>
-        <button>Explore More</button>
-    </section>
+    <h1>Powering Your Digital World</h1>
+    <p>Custom PCs, Repairs, and Rentals tailored to your needs. Let us help you build your dream setup today!</p>
+    <button onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">Explore More</button>
+</section>
+
 
     <section id="about">
         <h2>About Us</h2>
@@ -173,18 +174,56 @@
     </section>
 
     <section id="rentals">
-        <h2>Gaming PC Rentals</h2>
-        <p>We offer gaming PC rentals for short-term and long-term use. Perfect for events, tournaments, or gaming on the go!</p>
-    </section>
+    <h2>Gaming PC Rentals</h2>
+    <p>We offer gaming PC rentals for short-term and long-term use. Perfect for events, tournaments, or gaming on the go!</p>
+    <button onclick="alert('Rental services coming soon! Contact us for more details.')">View Rentals</button>
+</section>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Have questions or want to get in touch? Reach us at:</p>
-        <address>
-            Email: <a href="mailto:contact@terabytepc.com">contact@terabytepc.com</a><br>
-            Phone: 123-456-7890
-        </address>
-    </section>
+    
+Here’s how and where the updates should go within the current HTML structure:
+
+Updated Sections Placement:
+Hero Section (<section id="hero">): Replace the existing hero section with the updated one. This ensures the "Explore More" button has a functional link to the "About Us" section.
+
+Rentals Section (<section id="rentals">): Replace the existing rentals section with the updated code. This adds a button that either displays an alert or redirects users to a more detailed rentals page.
+
+Contact Section (<section id="contact">): Replace the existing contact section with the updated code. This adds a functional contact form allowing users to send inquiries.
+
+Final Integrated Code:
+Replace the existing code for the following sections in your HTML file:
+
+Hero Section (Updated):
+html
+Copy code
+<section id="hero">
+    <h1>Powering Your Digital World</h1>
+    <p>Custom PCs, Repairs, and Rentals tailored to your needs. Let us help you build your dream setup today!</p>
+    <button onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">Explore More</button>
+</section>
+Rentals Section (Updated):
+html
+Copy code
+<section id="rentals">
+    <h2>Gaming PC Rentals</h2>
+    <p>We offer gaming PC rentals for short-term and long-term use. Perfect for events, tournaments, or gaming on the go!</p>
+    <button onclick="alert('Rental services coming soon! Contact us for more details.')">View Rentals</button>
+</section>
+Contact Section (Updated):
+html
+Copy code
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Have questions or want to get in touch? Reach us at:</p>
+    <form action="mailto:contact@terabytepc.com" method="post" enctype="text/plain">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br><br>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
 
     <footer>
         <p>&copy; 2025 Terabyte PC and Parts LLC</p>
