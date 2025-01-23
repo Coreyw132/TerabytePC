@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terabyte PC and Parts LLC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <style>
+        /* Styling for SVG logo container */
+        .svg-container {
+            display: inline-block;
+            width: 300px;
+            height: 100;
+        }
+
+        /* Animation for color-changing SVG elements */
+        .color-changing {
+            animation: changeColor 1s infinite;
+        }
+
+        @keyframes changeColor {
+            0% { fill: red; }
+            33% { fill: blue; }
+            66% { fill: green; }
+            100% { fill: red; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <div id="svg-logo" class="svg-container"></div>
+                <span class="ms-2">Terabyte PC & Parts</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="gaming-rental.html">Gaming Rentals</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pc-build.html">PC Builds</a></li>
+                    <li class="nav-item"><a class="nav-link" href="inventory.html">Inventory</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">About Us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="jumbotron text-center text-light bg-primary">
+            <h1>Welcome to Terabyte PC and Parts LLC</h1>
+            <p>Your one-stop shop for custom PCs, gaming, and repair services.</p>
+        </div>
+    </header>
+
+        <section id="features" class="my-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Gaming Station Rentals</h2>
+                    <p>Rent high-end gaming setups by the hour or month. Perfect for gamers of all levels!</p>
+                    <a href="gaming-rental.html" class="btn btn-secondary">Learn More</a>
+                </div>
+                <div class="col-md-4">
+                    <h2>Custom PC Builder</h2>
+                    <p>Design your dream PC with live inventory and pricing updates.</p>
+                    <a href="pc-build.html" class="btn btn-secondary">Build Now</a>
+                </div>
+                <div class="col-md-4">
+                    <h3>Schedule a Service</h3>
+                    <p>Book consultations, repairs, or upgrades online with Google Calendar integration.</p>
+                    <a href="schedule.html" class="btn btn-secondary">Book Now</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="live-stream" class="my-5">
+            <h2>Live Stream</h2>
+            <p>Catch us live on Twitch, YouTube, TikTok, or Kick! Stay updated on the latest tech trends and gaming news.</p>
+            <div id="social-buttons">
+                <a href="https://www.twitch.tv/terabytepc" target="_blank" class="btn btn-primary m-2">Twitch</a>
+                <a href="https://www.youtube.com/@TerabytePCs" target="_blank" class="btn btn-primary m-2">YouTube</a>
+                <a href="https://tiktok.com/@terabytepc" target="_blank" class="btn btn-primary m-2">TikTok</a>
+                <a href="https://kick.com/terabytepc" target="_blank" class="btn btn-primary m-2">Kick</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-light py-3">
+        <div class="container text-center">
+            <p>&copy; 2025 Terabyte PC and Parts LLC. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script> <!-- Link to the JavaScript file -->
+</body>
+</html>

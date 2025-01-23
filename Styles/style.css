@@ -1,0 +1,203 @@
+/* Body Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1c1c1c;  /* Dark background */
+    color: #e0e0e0;  /* Light text color for contrast */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+
+
+/* Adjust the logo size */
+.logo {
+    max-width: 275px; /* Adjust to the desired width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Header and Navbar Styles */
+
+.navbar {
+    background: linear-gradient(to right, #1f1e1e, #000000); /* Neon gradient background */
+}
+
+/* Navbar Links */
+.navbar a {
+    color: #00ff00;
+    text-shadow: 0 0 3px #00ff00;
+}
+
+.navbar a:hover {
+    color: #ffffff; /* Cyan glow */
+}
+
+/* Navbar with background SVG */
+.navbar .logo {
+    width: 340px;
+    height: auto;
+    background-image: url('Images/Dogtag.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+
+/* Navbar Brand */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+/* Optional: Adjust logo size for smaller screens */
+@media (max-width: 768px) {
+    .navbar .logo {
+        height: 150px;  /* Reduce size on mobile */
+    }
+}
+
+/* Jumbotron Section */
+.jumbotron {
+    padding: 4rem;
+    text-align: center;
+    background: linear-gradient(to right, #1f1e1e, #000000); /* Neon gradient background */
+    color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 255, 0, 0.4); /* Glow effect around the jumbotron */
+    margin-bottom: 40px; /* Spacing for better layout */
+}
+
+.jumbotron h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 1.5px 1.5px 2px rgba(0, 255, 0, 0.4);  /* Neon pink text shadow */
+}
+
+.jumbotron p {
+    font-size: 1.2rem;
+    color: #00ff00;  
+}
+
+/* Buttons and Links */
+
+/* Button Glow Effect */
+button, a.btn {
+    background: #00ff00;
+    color: #000000;
+    text-shadow: 0 0 8px #00ff00;
+    box-shadow: 0 0 10px #00ff00;
+    transition: all 0.3s ease;
+}
+
+button:hover, a.btn:hover {
+    background: #ffffff57;
+    text-shadow: 0 0 10px #000000;
+    box-shadow: 0 0 20px #ffffff;
+}
+
+/* Footer */
+footer {
+    background: #111111;
+    color: #00ff00;
+    box-shadow: 0 -2px 8px rgba(0, 255, 0, 0.2);
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+/* Section Styles */
+section {
+    margin: 20px 0;
+    padding: 80px;
+    border-radius: 8px;
+    background: #111010;  /* Dark background for sections */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow to make sections stand out */
+}
+
+/* Card or Section Design Enhancements */
+.card, .section {
+    border: 1px solid #312b2b;
+    transition: transform 0.3s ease;
+}
+
+.card:hover, .section:hover {
+    transform: scale(1.05); /* Subtle zoom effect on hover */
+}
+
+h1, h2, h3 {
+    color: #2c2a2a;
+    text-shadow: 2px 2px 4px rgb(9, 255, 0); /* Subtle text shadow for headings */
+    font-weight: bold;
+}
+
+/* Hover effects for links in sections */
+a {
+    color: #00ff00;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #00ffff; /* Neon pink on hover */
+}
+
+/* Dark Mode Toggle Button */
+
+
+/* Background Gradient Animation */
+body {
+    background: linear-gradient(135deg, #3b3b3b, #000000, #004000);
+    background-size: 600% 400%;
+    animation: gradientBG 10s ease infinite;
+}
+
+/* Animation for background gradient */
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Futuristic Glow Effect */
+.futuristic-text {
+    color: #00ff00; /* Neon green */
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00;
+}
+
+/* Subtle RGB Animation */
+.rgb-effect {
+    background: linear-gradient(90deg, #00ff00, #00ffff, #004000);
+    background-size: 300% 300%;
+    animation: rgbBG 2s ease infinite;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes rgbBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Section Borders and Glows */
+section {
+    background: #000000;
+    border: 3px solid rgba(0, 255, 0, 0.2); /* Neon green border */
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.3); /* Subtle glow */
+}
