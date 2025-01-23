@@ -52,7 +52,7 @@ document.addEventListener('click', (e) => {
 document.addEventListener("DOMContentLoaded", () => {
     const svgContainer = document.getElementById("svg-logo");
 
-    fetch("images/Dogtag.svg")
+    fetch("iFDogtag.svg")
         .then(response => {
             if (!response.ok) {
                 throw new Error('Failed to fetch the SVG logo!');
